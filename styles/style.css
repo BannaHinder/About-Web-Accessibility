@@ -1,1 +1,40 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-family: "Sora", sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  color: darkolivegreen;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#9fb373), to(#fff));
+  background-image: linear-gradient(to bottom right, #9fb373, #fff);
+  background-attachment: fixed;
+}
+
+.header {
+  margin: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: darkolivegreen;
+  color: white;
+  height: 50px;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
