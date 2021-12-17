@@ -1,3 +1,13 @@
+@mixin for-desktop {
+  @media  (min-width:550px){
+  @content
+  }
+}
+$color1: #612282;
+$color2: #179f95;
+$color3: #9dd9f4;
+$color4: #e0017c;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +16,8 @@
 }
 h1 {
   font-size: 36px;
+  margin:20px;
+  text-align: center;
 }
 h2,
 h3 {
@@ -17,15 +29,18 @@ p {
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #9fb373, #fff);
+  background-image: linear-gradient(to bottom right, #ffffff, #9cdaf178);
   background-attachment: fixed;
 }
 .header {
   background: #fff;
-  padding: 20px;
-  padding-top: 40px;
-  width:fit-content;
-  border-bottom: solid 3px darkolivegreen;
+  padding-top: 20px;
+  width:auto;
+  border-bottom: solid 3px black;
+  img{
+    width:100%;
+    margin-bottom: -6px;
+  }
 }
 .main-style {
   margin: 10px;
@@ -35,7 +50,7 @@ body {
 
 a {
   text-decoration: none;
-  color: darkolivegreen;
+  color: #612282;
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -46,11 +61,15 @@ nav {
   align-items: flex-start;
   background: #ffffff99;
 }
+.pic{
+  background: url("pic/accessibility-image.jpg") no-repeat right top;
+  
+}
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  background: darkolivegreen;
+  background: #612282;
   color: white;
   height: 50px;
   padding: 10px;

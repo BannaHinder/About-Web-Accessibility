@@ -7,6 +7,8 @@
 
 h1 {
   font-size: 36px;
+  margin: 20px;
+  text-align: center;
 }
 
 h2,
@@ -20,19 +22,21 @@ p {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#9fb373), to(#fff));
-  background-image: linear-gradient(to bottom right, #9fb373, #fff);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#9cdaf178));
+  background-image: linear-gradient(to bottom right, #ffffff, #9cdaf178);
   background-attachment: fixed;
 }
 
 .header {
   background: #fff;
-  padding: 20px;
-  padding-top: 40px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-bottom: solid 3px darkolivegreen;
+  padding-top: 20px;
+  width: auto;
+  border-bottom: solid 3px black;
+}
+
+.header img {
+  width: 100%;
+  margin-bottom: -6px;
 }
 
 .main-style {
@@ -43,7 +47,7 @@ body {
 
 a {
   text-decoration: none;
-  color: darkolivegreen;
+  color: #612282;
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -63,11 +67,15 @@ nav {
   background: #ffffff99;
 }
 
+.pic {
+  background: url("pic/accessibility-image.jpg") no-repeat right top;
+}
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  background: darkolivegreen;
+  background: #612282;
   color: white;
   height: 50px;
   padding: 10px;
