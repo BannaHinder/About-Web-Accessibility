@@ -4,33 +4,58 @@
   font-family: "Shippori Antique B1", sans-serif;
   font-family: "Sora", sans-serif;
 }
-h1{
-    font-size: 20px;
-    color: darkolivegreen;
+h1 {
+  font-size: 36px;
 }
-body{
-    background-image: linear-gradient(to bottom right, #9fb373, #fff);
-    background-attachment: fixed;
+h2,
+h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
-.header{
-margin:10px;
-padding:10px;
-background: #fff;
-border-radius: 5px;
+p {
+  font-size: 18px;
 }
+
+body {
+  background-image: linear-gradient(to bottom right, #9fb373, #fff);
+  background-attachment: fixed;
+}
+.header {
+  background: #fff;
+  padding: 20px;
+  padding-top: 40px;
+  width:fit-content;
+  border-bottom: solid 3px darkolivegreen;
+}
+.main-style {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 a {
   text-decoration: none;
   color: darkolivegreen;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-.navbar{
-   
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff99;
 }
-footer{
-    position:absolute;
-    bottom:0px;
-    width:100%;
-    background: darkolivegreen;
-    color:white;
-    height:50px;
-    padding:10px;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: darkolivegreen;
+  color: white;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+}
+aside {
+  height: 500px;
 }
