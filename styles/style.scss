@@ -3,10 +3,11 @@
   @content
   }
 }
-@mixin flex-center-center{
+.flex-center-center{
   display:flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 $color1: #612282;
 $color2: #179f95;
@@ -24,8 +25,8 @@ html {
 }
 h1 {
   font-size: 36px;
-  margin:20px;
   text-align: center;
+  padding: 35px 0;
 }
 h2,
 h3 {
@@ -34,17 +35,20 @@ h3 {
 }
 p {
   font-size: 18px;
- 
   font-family: "Shippori Antique B1", sans-serif;
 }
-
+li{
+  list-style: none;
+  margin:10px 5px ;
+  font-size: 16px;
+  font-family: "Shippori Antique B1", sans-serif;
+}
 body {
   background-image: linear-gradient(to bottom right, #ffffff, #9cdaf178);
   background-attachment: fixed;
 }
 .header {
   background: #fff;
-  padding-top: 20px;
   width:auto;
   border-bottom: solid 3px black;
   img{
@@ -57,7 +61,6 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
-
 a {
   text-decoration: none;
   color: #612282;
@@ -65,38 +68,58 @@ a {
   margin-bottom: 10px;
   font-weight: bold;
 }
+img{
+  inline-size: -webkit-fill-available;
+}
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: #ffffff99;
+  img{
+    height: 30px;
+    margin:20px;
+    inline-size: auto;
+  }
 }
 .pic{
   background-image: url("../pic/braille.jpeg");
   background-size: cover;
   height: 56vw;
- @include flex-center-center();
 }
 .ma{
   color: white;
   text-align: center;
+}
+.margin{
+  margin:40px 0;
 }
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   background: #000000;
-  color: white;
   height: 50px;
   padding: 10px;
   width: 100%;
+  button{
+    border-style: none;
+    text-decoration: none;
+    background:none;
+    color:white;
+    margin-left:20px;
+    font-size: 20px;
+    &:hover{
+  cursor:pointer;
+    }
+  }
+  a{
+    color:white;
+  }
 }
 aside {
-  height: 500px;
+  height: 555px;
+  background: white;
+  padding-top:20px;
 }
-button{
-  border-style: none;
-  text-decoration: none;
-  background:none;
-  color:white;
-}
+

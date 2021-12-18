@@ -1,3 +1,19 @@
+.flex-center-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,8 +26,8 @@ html {
 
 h1 {
   font-size: 36px;
-  margin: 20px;
   text-align: center;
+  padding: 35px 0;
 }
 
 h2,
@@ -25,6 +41,13 @@ p {
   font-family: "Shippori Antique B1", sans-serif;
 }
 
+li {
+  list-style: none;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#9cdaf178));
   background-image: linear-gradient(to bottom right, #ffffff, #9cdaf178);
@@ -33,7 +56,6 @@ body {
 
 .header {
   background: #fff;
-  padding-top: 20px;
   width: auto;
   border-bottom: solid 3px black;
 }
@@ -57,6 +79,10 @@ a {
   font-weight: bold;
 }
 
+img {
+  inline-size: -webkit-fill-available;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,19 +97,16 @@ a {
   background: #ffffff99;
 }
 
+.navbar img {
+  height: 30px;
+  margin: 20px;
+  inline-size: auto;
+}
+
 .pic {
   background-image: url("../pic/braille.jpeg");
   background-size: cover;
   height: 56vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .ma {
@@ -91,25 +114,40 @@ a {
   text-align: center;
 }
 
+.margin {
+  margin: 40px 0;
+}
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   background: #000000;
-  color: white;
   height: 50px;
   padding: 10px;
   width: 100%;
 }
 
-aside {
-  height: 500px;
-}
-
-button {
+footer button {
   border-style: none;
   text-decoration: none;
   background: none;
   color: white;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+footer button:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: white;
+}
+
+aside {
+  height: 555px;
+  background: white;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

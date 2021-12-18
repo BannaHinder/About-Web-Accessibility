@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,24 +16,33 @@
   </head>
   <body>
     <header class="header">
-      <h1>Tillgänglighet på Webben</h1>
-      <img src="pic/loving-hands.jpg" alt="hands reaching up" />
+      <h1  tabindex="0">Tillgänglighet på Webben</h1>
+      <img
+        src="pic/accessibility-image.jpg"
+        alt="Dator med ikoner runt sig"
+      />
     </header>
-    <p class="main-style">Klicka på länkarna nedan för att navigera till motsvarande stycke!</p>
-    <nav class="navbar main-style">
-      <a href="#">Vad är tillgänglighet?</a>
-      <a href="#">Tillgänglighet på webben</a>
-      <a href="#">Exempel på tillgänglighetsanpassning på webben</a>
-      <a href="#">Vidareläsning om tillgänglighet</a>
-    </nav>
-    <main>
-      <div class="pic">
-        <h2 class="ma">Vad innebär tillgänglighet på webben?</h2>
+    <nav class="navbar main-style" id="nav">
+      <h3>Navigering</h3>
+      <div class="main-style flex-center-center">
+        <p>
+          Klicka på länkarna nedan för att navigera till motsvarande stycke!
+        </p>
+        <img src="pic/arrow-icon-trans.png" alt="arrow down" />
       </div>
 
-      <article class="main-style">
-        <h3>Vad menas med tillgänglighet?</h3>
-        <section>
+      <a href="#section1">Vad är tillgänglighet?</a>
+      <a href="#section2">Tillgänglighet på webben</a>
+      <a href="#section3">Exempel på tillgänglighetsanpassning på webben</a>
+      <a href="#section4">Länkar till vidareläsning</a>
+    </nav>
+    <main>
+      <article id="section1" >
+        <div class="pic flex-center-center margin" tabindex="0" alt="kvinna läser braille">
+          <h2 class="ma">Vad innebär tillgänglighet på webben?</h2>
+        </div>
+        <section class="main-style">
+          <h3 tabindex="0">Vad menas med tillgänglighet?</h3>
           <p>
             Vi är alla födda med olika förutsättningar. Ingen fungerar riktigt
             som en annan. Runt 15% av världens befolkning har enligt WHO
@@ -46,20 +55,46 @@
           </p>
         </section>
       </article>
-      <article class="main-style">
-        <h3>Tillgänglighet på webben</h3>
-        <section>
+      <img class="margin" src="pic/people-communicating.jpg" alt="människor som kommunicerar" />
+      <article id="section2">
+        <h3  tabindex="0" class="main-style">Tillgänglighet på webben</h3>
+        <section class="main-style">
           <p>
-
+            Tillgänglighetsanspassning på webben tillåter användare med olika
+            funktionsvariationer att kunna förstå, använda och åtnjuta webben.
+            Det finns numera flera sorters verktyg och hjälpmedel man kan
+            använda sig av när man surfar på webben beroende på vilket
+            funktionshinder man har. Screen-readers hjälper den med nedsatt syn
+            att tolka Men allt detta kräver att designers och utvecklare har med
+            dessa nyckelpunker i åtanke när produkter utformas så att OBS
+            PLACEHOLDERTEXT
+          </p>
+          <ul>
+            <li>Hörsel</li>
+            <li>Kognitiv</li>
+            <li>Neurologisk</li>
+            <li>Fysisk</li>
+            <li>Tal</li>
+            <li>Syn</li>
+          </ul>
+          <p>
+            Områden med sämre internetuppkoppling kan också räknas till samma
+            kategori.
           </p>
         </section>
+        <img class="margin" src="pic/fysical-example.png" alt="exempel på fysiska hinder" />
       </article>
-      <article class="main-style">
-        <h3>Hur kan en webbsida göras mer tillgänglig?</h3>
-        <section>
+
+      <article id="section3">
+        <h3 tabindex="0" class="main-style">Hur kan en webbsida göras mer tillgänglig?</h3>
+        <section class="main-style">
+          <h4>Som designer kan du tänka på följande saker:</h4>
           <ul>
-            <li></li>
-            <li></li>
+            <li>Håll hög färgkontrast mellan text och bakgrund.</li>
+            <li>
+              Berätta eller meddela inte något med endast bild eller färg.
+              Använd tydlig text vid t ex fel-meddelanden
+            </li>
             <li></li>
             <li></li>
             <li></li>
@@ -68,21 +103,37 @@
             <li></li>
           </ul>
         </section>
+        <img class="margin" src="pic/accessibility-icons.png" alt="tillgänglighetsikoner" />
+        <section  tabindex="0">
+          <h4 class="main-style">Fler exempel på åtgärder som utvecklare:</h3>
+          
+        </section>
       </article>
-      <button >Scroll!</button><br /><br />
+
+
     </main>
-    <aside class="main-style navbar">
-      <h2>Länkar till vidareläsning:</h2>
-      <a href="https://www.w3.org/standards/webdesign/accessibility ">w3 standard för accessibility på nätet</a>
-      <a href="https://www.w3.org/TR/WCAG21/ ">en länk till</a>
-      <a href="https://en.wikipedia.org/wiki/Web_accessibility">Wikipedia om tillgänglighet</a>
-      <a href="https://webbriktlinjer.se/wcag/?checklista "> Checklista på hur du gör din webbsida mer tillgänglig</a>
-       
-      
+    <aside id="section4">
+      <h2 class="main-style">Länkar till vidareläsning:</h2>
+      <div class="navbar main-style">
+        <a href="https://www.w3.org/standards/webdesign/accessibility "
+          >w3 standard för accessibility på nätet</a
+        >
+        <a href="https://www.w3.org/TR/WCAG21/ "
+          >Officiella Web Content Accessibility Guidelines (WCAG)</a
+        >
+        <a
+          href="https://www.internetsociety.org/resources/doc/2012/internet-accessibility-internet-use-by-persons-with-disabilities-moving-forward/"
+          >Internet society om tillgänglighet på nätet</a
+        >
+        <a href="https://webbriktlinjer.se/wcag/?checklista ">
+          Checklista på hur du gör din webbsida mer tillgänglig</a
+        >
+      </div>
+      <img src="pic/loving-hands.jpg" alt="händer som sträcker sig upp" />
     </aside>
+
     <footer>
-      <button onclick="scrollWin()">Till toppen av sidan ^</button>
-      
+      <button onclick="scrollWin()">Till toppen av sidan ^</button> <br />
     </footer>
     <script src="script.js"></script>
   </body>
