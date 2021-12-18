@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Shippori Antique B1", sans-serif;
   font-family: "Sora", sans-serif;
 }
 
@@ -19,6 +22,7 @@ h3 {
 
 p {
   font-size: 18px;
+  font-family: "Shippori Antique B1", sans-serif;
 }
 
 body {
@@ -53,7 +57,7 @@ a {
   font-weight: bold;
 }
 
-nav {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,14 +72,30 @@ nav {
 }
 
 .pic {
-  background: url("pic/accessibility-image.jpg") no-repeat right top;
+  background-image: url("../pic/braille.jpeg");
+  background-size: cover;
+  height: 56vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ma {
+  color: white;
+  text-align: center;
 }
 
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  background: #612282;
+  background: #000000;
   color: white;
   height: 50px;
   padding: 10px;
@@ -84,5 +104,12 @@ footer {
 
 aside {
   height: 500px;
+}
+
+button {
+  border-style: none;
+  text-decoration: none;
+  background: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

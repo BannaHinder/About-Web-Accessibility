@@ -1,4 +1,5 @@
 
   function scrollWin() {
-    window.scrollTo(0, 500);
+    window.scrollTo(0, 0);
+    
   }
