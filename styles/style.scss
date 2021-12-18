@@ -1,5 +1,5 @@
 @mixin for-desktop {
-  @media  (min-width:550px){
+  @media  (min-width:770px){
   @content
   }
 }
@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 $color1: #612282;
-$color2: #179f95;
+$color2: #106d67;
 $color3: #9dd9f4;
 $color4: #e0017c;
 
@@ -27,19 +27,27 @@ h1 {
   font-size: 36px;
   text-align: center;
   padding: 35px 0;
+  @include for-desktop(){
+    font-size: 40px;
+    padding: 6vw;
+  }
 }
-h2,
-h3 {
+h2 {
   font-size: 26px;
+  margin: 20px 10px;
+}
+h3{
+  font-size: 20px;
   margin-bottom: 10px;
 }
 p {
   font-size: 18px;
   font-family: "Shippori Antique B1", sans-serif;
+  margin:10px 0;
 }
 li{
   list-style: none;
-  margin:10px 5px ;
+  margin:20px 5px ;
   font-size: 16px;
   font-family: "Shippori Antique B1", sans-serif;
 }
@@ -63,29 +71,43 @@ body {
 }
 a {
   text-decoration: none;
-  color: #612282;
+  color: $color2;
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 img{
   inline-size: -webkit-fill-available;
+  @include for-desktop(){
+    width:50%;
+    margin: 0 25%;
+  }
 }
 .navbar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   background: #ffffff99;
   img{
     height: 30px;
     margin:20px;
     inline-size: auto;
   }
+  // @include for-desktop(){
+  //   position: fixed;
+  //   top:6vw;
+  //   left:0;
+  //   width: 30%;
+  // }
 }
 .pic{
   background-image: url("../pic/braille.jpeg");
   background-size: cover;
   height: 56vw;
+}
+.pic2{
+  background-image: url("../pic/background-pic.jfif");
+  background-size: cover;
+  height: 32vw;
 }
 .ma{
   color: white;
@@ -116,10 +138,19 @@ footer {
   a{
     color:white;
   }
+ 
 }
 aside {
   height: 555px;
   background: white;
   padding-top:20px;
+  margin-top: 60px;
+  @include for-desktop(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
 }
 

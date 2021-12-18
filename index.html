@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tillgänglighet</title>
-    <link rel="icon" type="image/x-icon" href="/pic/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/pic/accessibility-icon.png" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,8 +23,9 @@
       />
     </header>
     <nav class="navbar main-style" id="nav">
-      <h3>Navigering</h3>
+      
       <div class="main-style flex-center-center">
+        <h2>Navigering</h2>
         <p>
           Klicka på länkarna nedan för att navigera till motsvarande stycke!
         </p>
@@ -38,7 +39,7 @@
     </nav>
     <main>
       <article id="section1" >
-        <div class="pic flex-center-center margin" tabindex="0" alt="kvinna läser braille">
+        <div class="pic flex-center-center margin" tabindex="0">
           <h2 class="ma">Vad innebär tillgänglighet på webben?</h2>
         </div>
         <section class="main-style">
@@ -54,11 +55,11 @@
             tillgänglighet för fler människor.
           </p>
         </section>
-      </article>
+      
       <img class="margin" src="pic/people-communicating.jpg" alt="människor som kommunicerar" />
-      <article id="section2">
-        <h3  tabindex="0" class="main-style">Tillgänglighet på webben</h3>
-        <section class="main-style">
+        
+        <section id="section2" class="main-style">
+          <h3  tabindex="0" >Tillgänglighet på webben</h3>
           <p>
             Tillgänglighetsanspassning på webben tillåter användare med olika
             funktionsvariationer att kunna förstå, använda och åtnjuta webben.
@@ -78,7 +79,7 @@
             <li>Syn</li>
           </ul>
           <p>
-            Områden med sämre internetuppkoppling kan också räknas till samma
+            Områden med sämre tillgång till Sinternetuppkoppling kan också räknas till samma
             kategori.
           </p>
         </section>
@@ -86,27 +87,36 @@
       </article>
 
       <article id="section3">
-        <h3 tabindex="0" class="main-style">Hur kan en webbsida göras mer tillgänglig?</h3>
+        <div class="pic2 flex-center-center margin" tabindex="0">
+          <h2 class="ma">Hur kan en webbsida göras mer tillgänglig?</h2>
+        </div>
         <section class="main-style">
-          <h4>Som designer kan du tänka på följande saker:</h4>
+          <h3>Som designer kan du tänka på följande saker:</h3>
           <ul>
-            <li>Håll hög färgkontrast mellan text och bakgrund.</li>
+            <li>Färgkontrast - Håll hög färgkontrast mellan text och bakgrund.</li>
             <li>
-              Berätta eller meddela inte något med endast bild eller färg.
+              Textmeddelanden - Berätta eller meddela inte något med endast bild eller färg.
               Använd tydlig text vid t ex fel-meddelanden
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Meningsfulla länkar - det ak str vart det tar dig om du klickar på det. 	
+              </li>
+              <li>Undvika för mycket animationer.</li>
+            <li>Transcript - Har du med videor som förklarar något lär det finnas med ett transcript på både vad som händer och vad som sägs. </li>
+            <li>Typografi - mellanrum mellan raderna, lagom stor text, mellanrum mellan bokstäver etc.</li>
+            <li>Captcha - Måste du använda dig av captcha, erbjud text-alternativ</li>
+            <li>Gör så klar och tydlig layout som möjligt. </li>
+          </ul>
+        </section>
+        <img class="margin" src="pic/accessibility-icons.png" alt="tillgänglighetsikoner" />
+        <section class="main-style"  tabindex="0">
+          <h3 >Fler exempel på åtgärder som utvecklare:</h3>
+          <ul>
+            <li>Användande av Semantiskt korrekt html taggar</li>
+            <li>Skriv beskrivande Alternativ (alt) text för bilder</li>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-        </section>
-        <img class="margin" src="pic/accessibility-icons.png" alt="tillgänglighetsikoner" />
-        <section  tabindex="0">
-          <h4 class="main-style">Fler exempel på åtgärder som utvecklare:</h3>
-          
         </section>
       </article>
 
@@ -133,7 +143,7 @@
     </aside>
 
     <footer>
-      <button onclick="scrollWin()">Till toppen av sidan ^</button> <br />
+      <button onclick="scrollWin()">Till toppen av sidan ▲</button> <br />
     </footer>
     <script src="script.js"></script>
   </body>
