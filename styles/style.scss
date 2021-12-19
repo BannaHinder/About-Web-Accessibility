@@ -1,10 +1,10 @@
 @mixin for-desktop {
-  @media  (min-width:770px){
-  @content
+  @media (min-width: 770px) {
+    @content;
   }
 }
-.flex-center-center{
-  display:flex;
+.flex-center-center {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -21,13 +21,12 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Sora", sans-serif;
-  
 }
 h1 {
   font-size: 36px;
   text-align: center;
   padding: 35px 0;
-  @include for-desktop(){
+  @include for-desktop() {
     font-size: 40px;
     padding: 6vw;
   }
@@ -36,18 +35,18 @@ h2 {
   font-size: 26px;
   margin: 20px 10px;
 }
-h3{
+h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 30px 0;
 }
 p {
   font-size: 18px;
   font-family: "Shippori Antique B1", sans-serif;
-  margin:10px 0;
+  margin: 10px 0;
 }
-li{
+li {
   list-style: none;
-  margin:20px 5px ;
+  margin: 20px 5px;
   font-size: 16px;
   font-family: "Shippori Antique B1", sans-serif;
 }
@@ -57,17 +56,28 @@ body {
 }
 .header {
   background: #fff;
-  width:auto;
+  width: auto;
   border-bottom: solid 3px black;
-  img{
-    width:100%;
-    margin-bottom: -6px;
+  @include for-desktop(){
+flex-direction: row-reverse;
+height:30vh;
+justify-content: flex-end;
+img{
+  width: auto;
+}
+  }
+  img {
+    margin:0 0 -2px 0 ;
+    height:fill-available;
   }
 }
 .main-style {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
+  @include for-desktop(){
+    margin: 0 25%;
+  }
 }
 a {
   text-decoration: none;
@@ -76,10 +86,10 @@ a {
   margin-bottom: 10px;
   font-weight: bold;
 }
-img{
+img {
   inline-size: -webkit-fill-available;
-  @include for-desktop(){
-    width:50%;
+  @include for-desktop() {
+    width: 50%;
     margin: 0 25%;
   }
 }
@@ -87,34 +97,40 @@ img{
   display: flex;
   flex-direction: column;
   background: #ffffff99;
-  img{
+  padding: 20px;
+  div{
+    padding:20px;
+  }
+  img {
     height: 30px;
-    margin:20px;
+    margin: 20px;
     inline-size: auto;
   }
-  // @include for-desktop(){
-  //   position: fixed;
-  //   top:6vw;
-  //   left:0;
-  //   width: 30%;
-  // }
 }
-.pic{
+.pic {
   background-image: url("../pic/braille.jpeg");
   background-size: cover;
   height: 56vw;
+  @include for-desktop(){
+    height:35vh;
+  }
 }
-.pic2{
+.pic2 {
   background-image: url("../pic/background-pic.jfif");
   background-size: cover;
-  height: 32vw;
+  height: 35vh;
+  background-position: right;
 }
-.ma{
+.ma {
   color: white;
   text-align: center;
 }
-.margin{
-  margin:40px 0;
+.margin {
+  margin: 40px 0;
+  @include for-desktop(){
+    margin:60px 25%;
+    width:50%;
+  }
 }
 footer {
   position: fixed;
@@ -124,33 +140,31 @@ footer {
   height: 50px;
   padding: 10px;
   width: 100%;
-  button{
+  button {
     border-style: none;
     text-decoration: none;
-    background:none;
-    color:white;
-    margin-left:20px;
+    background: none;
+    color: white;
+    margin-left: 20px;
     font-size: 20px;
-    &:hover{
-  cursor:pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
-  a{
-    color:white;
+  a {
+    color: white;
   }
- 
 }
 aside {
-  height: 555px;
   background: white;
-  padding-top:20px;
+  padding-top: 60px;
   margin-top: 60px;
-  @include for-desktop(){
-    display:flex;
+  margin-bottom: 48px;
+  @include for-desktop() {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 48px;
+    margin-top: 120px;
   }
 }
-

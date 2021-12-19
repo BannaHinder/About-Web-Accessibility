@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 30px 0;
 }
 
 p {
@@ -72,15 +72,39 @@ body {
   border-bottom: solid 3px black;
 }
 
+@media (min-width: 770px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 30vh;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header img {
+    width: auto;
+  }
+}
+
 .header img {
-  width: 100%;
-  margin-bottom: -6px;
+  margin: 0 0 -2px 0;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
 }
 
 .main-style {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
+}
+
+@media (min-width: 770px) {
+  .main-style {
+    margin: 0 25%;
+  }
 }
 
 a {
@@ -111,6 +135,11 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #ffffff99;
+  padding: 20px;
+}
+
+.navbar div {
+  padding: 20px;
 }
 
 .navbar img {
@@ -125,10 +154,17 @@ img {
   height: 56vw;
 }
 
+@media (min-width: 770px) {
+  .pic {
+    height: 35vh;
+  }
+}
+
 .pic2 {
   background-image: url("../pic/background-pic.jfif");
   background-size: cover;
-  height: 32vw;
+  height: 35vh;
+  background-position: right;
 }
 
 .ma {
@@ -138,6 +174,13 @@ img {
 
 .margin {
   margin: 40px 0;
+}
+
+@media (min-width: 770px) {
+  .margin {
+    margin: 60px 25%;
+    width: 50%;
+  }
 }
 
 footer {
@@ -168,10 +211,10 @@ footer a {
 }
 
 aside {
-  height: 555px;
   background: white;
-  padding-top: 20px;
+  padding-top: 60px;
   margin-top: 60px;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 770px) {
@@ -189,7 +232,7 @@ aside {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 48px;
+    margin-top: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
