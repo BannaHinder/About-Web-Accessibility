@@ -21,7 +21,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", sans-serif ,serif;
 }
 
 h1 {
@@ -50,15 +50,17 @@ h3 {
 
 p {
   font-size: 18px;
-  font-family: "Shippori Antique B1", sans-serif;
+  font-family: "Shippori Antique B1", sans-serif, serif;
   margin: 10px 0;
+  line-height: 1.5;
 }
 
 li {
   list-style: none;
   margin: 20px 5px;
   font-size: 16px;
-  font-family: "Shippori Antique B1", sans-serif;
+  font-family: "Shippori Antique B1", sans-serif, serif;
+  line-height: 1.5;
 }
 
 body {
